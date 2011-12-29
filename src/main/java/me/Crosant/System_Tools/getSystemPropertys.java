@@ -4,6 +4,7 @@ public class getSystemPropertys {
 
 	public static void SystemPropertys() throws Exception
     {
+		
 		String Java_Version = System.getProperty("java.version");
 		String SystemOS = System.getProperty("os.name");
     	String SystemType = System.getProperty("os.arch");
