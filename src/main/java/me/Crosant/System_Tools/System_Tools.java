@@ -3,7 +3,7 @@ package me.Crosant.System_Tools;
 
 public class System_Tools 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
     	
     	System.out.println("/*************************************************************\\");
@@ -14,7 +14,11 @@ public class System_Tools
     	System.out.println("|                                                             |");
     	System.out.println("|                                                             |");
     	System.out.println(" ************************************************************* ");
-    	
+    	Thread.sleep(3000);
+    	System.out.println();
+    	System.out.println();
+    	System.out.println();
+    	System.out.println();
     	getSystemPropertys.SystemPropertys();
     	
     }
