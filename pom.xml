@@ -7,11 +7,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+
   <name>System_Tools</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mainClass>me.Crosant.System_Tools.System_Tools</mainClass>
   </properties>
 
   <dependencies>

@@ -15,6 +15,10 @@ public class getSystemPropertys {
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
+    	System.out.println("|    System Information:                                      |");
+    	Thread.sleep(500);
+    	System.out.println("|                                                             |");
+    	Thread.sleep(500);
     	System.out.println("|    Java Version:    "+ Java_Version + "                                |");
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
