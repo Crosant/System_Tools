@@ -2,16 +2,22 @@ package me.Crosant.System_Tools;
 
 public class getSystemPropertys {
 
+	public static String Java_Version = System.getProperty("java.version");
+	public static String SystemOS = System.getProperty("os.name");
+	public static String SystemType = System.getProperty("os.arch");
+	public static String SystemVersion = System.getProperty("os.version");
+	public static String UserName = System.getProperty("user.name");
+	public static String UserDir = System.getProperty("user.home");
+	
 	public static void SystemPropertys() throws Exception
     {
-		
-		String Java_Version = System.getProperty("java.version");
-		String SystemOS = System.getProperty("os.name");
-    	String SystemType = System.getProperty("os.arch");
-    	String SystemVersion = System.getProperty("os.version");
-    	String UserName = System.getProperty("user.name");
-    	String UserDir = System.getProperty("user.home");
-    	System.out.println("/*************************************************************\\");
+
+		printpropertys();
+    	
+    }
+	
+	public static void printpropertys() throws Exception{
+		System.out.println("/*************************************************************\\");
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
@@ -36,8 +42,9 @@ public class getSystemPropertys {
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
     	System.out.println(" ************************************************************* ");
-
     	System_Tools.menu();
-    }
+	}
+
+
 	
 }
