@@ -10,6 +10,8 @@ public class getSystemPropertys {
 	public static String UserDir = System.getProperty("user.home");
 	public static java.lang.management.OperatingSystemMXBean core1 =  java.lang.management.ManagementFactory.getOperatingSystemMXBean();
         public static int core = core1.getAvailableProcessors();
+        public static String sname = System.getenv("COMPUTERNAME");
+        
 	public static void SystemPropertys() throws Exception
     {
 
@@ -22,9 +24,13 @@ public class getSystemPropertys {
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
-    	System.out.println("    System Information:                                      ");
+    	System.out.println("    System Information:                                        ");
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
+    	Thread.sleep(500);
+        System.out.println("    System's Name: "  + sname  +"                                      ");
+    	Thread.sleep(500);
+        System.out.println("|                                                             |");
     	Thread.sleep(500);
     	System.out.println("    Java Version:    "+ Java_Version + "                                ");
     	Thread.sleep(500);
