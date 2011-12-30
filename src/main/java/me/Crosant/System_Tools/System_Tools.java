@@ -1,8 +1,10 @@
 package me.Crosant.System_Tools;
 
 
+
 public class System_Tools 
 {
+    public static int in;
     public static void main( String[] args ) throws Exception
     {
     	
@@ -34,8 +36,8 @@ public class System_Tools
     	System.out.println("|    3. Exit                                                  |");
     	System.out.println("|                                                             |");
     	System.out.println(" ************************************************************* ");
-    	
-    	int in = System.in.read();
+    	in = 0;
+    	in = System.in.read();
     	if (in == 49){
     	
     	getSystemPropertys.SystemPropertys();
@@ -49,11 +51,13 @@ public class System_Tools
     		menu();
     	}
     	else if(in == 51){
-    		
+    		System.out.println("Good Bye");
+    		Thread.sleep(1000);
     		System.exit(0);
     		
     	}
     	
+        
     	
     }
     

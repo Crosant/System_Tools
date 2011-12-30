@@ -8,7 +8,8 @@ public class getSystemPropertys {
 	public static String SystemVersion = System.getProperty("os.version");
 	public static String UserName = System.getProperty("user.name");
 	public static String UserDir = System.getProperty("user.home");
-	
+	public static java.lang.management.OperatingSystemMXBean core1 =  java.lang.management.ManagementFactory.getOperatingSystemMXBean();
+        public static int core = core1.getAvailableProcessors();
 	public static void SystemPropertys() throws Exception
     {
 
@@ -17,7 +18,7 @@ public class getSystemPropertys {
     }
 	
 	public static void printpropertys() throws Exception{
-		System.out.println("/*************************************************************\\");
+        System.out.println("/*************************************************************\\");
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
@@ -33,6 +34,10 @@ public class getSystemPropertys {
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
+        System.out.println("    Cores: " + core +"                                         ");
+    	Thread.sleep(500);
+        System.out.println("|                                                             |");
+    	Thread.sleep(500);
     	System.out.println("    User: " + UserName + "                                            ");
     	Thread.sleep(500);
     	System.out.println("|                                                             |");
@@ -42,7 +47,10 @@ public class getSystemPropertys {
     	System.out.println("|                                                             |");
     	Thread.sleep(500);
     	System.out.println(" ************************************************************* ");
+        
     	System_Tools.menu();
+        
+        
 	}
 
 
