@@ -31,8 +31,7 @@ public class backupSystem {
                 
                     
                     
-                }   catch (InterruptedException ex) {
-                        Logger.getLogger(backupSystem.class.getName()).log(Level.SEVERE, null, ex);
+                
                     } catch (IOException ex) {
                     Logger.getLogger(backupSystem.class.getName()).log(Level.SEVERE, null, ex);
                 }
