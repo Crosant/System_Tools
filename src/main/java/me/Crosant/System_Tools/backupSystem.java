@@ -27,6 +27,8 @@ public class backupSystem {
                 System.out.println("Finished");
                 } else {
                    Runtime.getRuntime().exec("zip -r home.zip " + getSystemPropertys.UserDir);
+                                   System.out.println("Finished");
+
                 }
                 
                     
