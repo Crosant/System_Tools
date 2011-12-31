@@ -25,8 +25,6 @@ public class backupSystem {
                  Runtime.getRuntime().exec("rm home.zip");
                  Runtime.getRuntime().exec("zip -r home.zip " + getSystemPropertys.UserDir);
                 System.out.println("Finished");
-    		Thread.sleep(1000);
-    		System.exit(0);
                 } else {
                    Runtime.getRuntime().exec("zip -r home.zip " + getSystemPropertys.UserDir);
                 }
