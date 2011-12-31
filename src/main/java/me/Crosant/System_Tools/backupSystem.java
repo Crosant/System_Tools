@@ -24,13 +24,18 @@ public class backupSystem {
                 if (exists) {
                  Runtime.getRuntime().exec("rm home.zip");
                  Runtime.getRuntime().exec("zip -r home.zip " + getSystemPropertys.UserDir);
+                System.out.println("Finished");
+    		Thread.sleep(1000);
+    		System.exit(0);
                 } else {
                    Runtime.getRuntime().exec("zip -r home.zip " + getSystemPropertys.UserDir);
                 }
                 
                     
                     
-                } catch (IOException ex) {
+                }   catch (InterruptedException ex) {
+                        Logger.getLogger(backupSystem.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (IOException ex) {
                     Logger.getLogger(backupSystem.class.getName()).log(Level.SEVERE, null, ex);
                 }
         			    
