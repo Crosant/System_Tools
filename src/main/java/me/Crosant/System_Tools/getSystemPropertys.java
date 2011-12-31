@@ -16,7 +16,8 @@ public class getSystemPropertys {
     {
 
 		printpropertys();
-    	
+                
+                
     }
 	
 	public static void printpropertys() throws Exception{
@@ -54,7 +55,6 @@ public class getSystemPropertys {
     	Thread.sleep(500);
     	System.out.println(" ************************************************************* ");
         
-    	System_Tools.menu();
         
         
 	}

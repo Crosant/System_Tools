@@ -32,7 +32,7 @@ public class System_Tools
     	System.out.println("|                                                             |");
     	System.out.println("|    Menu:                                                    |");
     	System.out.println("|    1. Get System Informations                               |");
-    	System.out.println("|    2.                                                       |");
+    	System.out.println("|    2. Backup Home                                           |");
     	System.out.println("|    3. Exit                                                  |");
     	System.out.println("|                                                             |");
     	System.out.println(" ************************************************************* ");
@@ -46,9 +46,9 @@ public class System_Tools
     	}
     	else if(in == 50){
     		
-    		System.out.println("Not finished Jet");
+    		backupSystem.backup();
     	
-    		menu();
+    		
     	}
     	else if(in == 51){
     		System.out.println("Good Bye");
